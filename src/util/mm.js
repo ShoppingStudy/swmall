@@ -1,10 +1,12 @@
 /*
-* @Author: imooc
-* @Date:   2017-09-19 10:50:33
-* @Last Modified by:   imooc
-* @Last Modified time: 2017-10-17 13:05:56
+* @Author: suwei
+* @Date:   2017-10-25 09:46:33
+* @Last Modified by:   suwei
+* @Last Modified time: 2017-10-30 09:46:36
 */
+
 'use strict';
+require('util/sweetAlert/index.js');
 var Hogan = require('hogan.js');
 var conf = {
 	serverHost : ''
@@ -60,11 +62,11 @@ var _mm = {
 
 	//成功提示
 	successTips : function(msg){
-		alert(msg || '操作成功');
+		swal("Good job!", msg || '操作成功', "success")
 	},
 	//错误提示
 	errorTips : function(msg){
-		alert(msg || '操作失败');
+		sweetAlert("Oops...", msg, "error");
 	},
 	//字段的验证，支持非空，手机，邮箱
 	validate : function(value,type){

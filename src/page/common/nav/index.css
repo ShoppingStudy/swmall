@@ -1,15 +1,9 @@
 /*
 * @Author: Administrator
 * @Date:   2017-10-29 16:49:35
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-29 17:44:17
+* @Last Modified by:   suwei
+* @Last Modified time: 2017-10-30 12:35:24
 */
-.navbar .navbar-header .logo{
-	font-size: 34px;
-    color: #c60023;
-    font-weight: 700;
-    text-decoration: none;
-}
 .navbar-collapse .navbar-nav.user-login{
 	display: none;
 }

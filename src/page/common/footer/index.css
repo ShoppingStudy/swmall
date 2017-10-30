@@ -1,0 +1,22 @@
+/*
+* @Author: suwei
+* @Date:   2017-10-30 11:49:28
+* @Last Modified by:   suwei
+* @Last Modified time: 2017-10-30 12:32:54
+*/
+.footer .links {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link {
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.footer .copyright {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}

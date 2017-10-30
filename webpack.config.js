@@ -2,7 +2,7 @@
 * @Author: suwei
 * @Date:   2017-10-16 22:08:45
 * @Last Modified by:   suwei
-* @Last Modified time: 2017-10-17 13:38:06
+* @Last Modified time: 2017-10-30 18:10:05
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -38,6 +38,7 @@ var config = {
         // 加载器配置  
         loaders: [ 
             { test: /\.css$/,loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader' })}, 
+            { test: /\.string$/,loader: 'html-loader'}, 
             { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,loader: 'url-loader?limit=100&name=resource/[name].[ext]'},  
         ]          
     }, 
