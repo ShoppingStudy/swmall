@@ -1,0 +1,38 @@
+/*
+* @Author: suwei
+* @Date:   2017-10-31 08:25:37
+* @Last Modified by:   suwei
+* @Last Modified time: 2017-10-31 09:28:41
+*/
+.result-con{
+	margin-top: 20px;
+	background:#DAD6CC;
+	display: none;
+}
+.result-con .result-title{
+	font-size:50px;
+	color:#FF7A00;
+	text-align:center;
+	margin-bottom:1px;
+	text-shadow:4px 4px 1px white;
+}	
+.result-con p{
+	color:#B1A18D;;
+	font-size:20px;
+	margin-top:1px;
+	text-align:center;
+}
+.result-con .redirect{
+	text-align:center;
+}	
+.result-con .redirect p{
+	display: inline-block;
+}	
+.result-con a{
+	color:#ff7a00;
+	text-decoration:none;
+	padding:5px;
+	font-size:13px;
+	font-family: arial, serif;
+	font-weight:bold;
+}	

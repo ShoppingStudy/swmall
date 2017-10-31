@@ -2,7 +2,7 @@
 * @Author: suwei
 * @Date:   2017-10-16 22:08:45
 * @Last Modified by:   suwei
-* @Last Modified time: 2017-10-30 18:10:05
+* @Last Modified time: 2017-10-31 08:25:13
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -28,6 +28,7 @@ var config = {
         'common' : ['./src/page/common/index.js'],
         'index' : ['./src/page/index/index.js'],
         'login' : ['./src/page/login/index.js'],
+        'result' : ['./src/page/result/index.js'],
     },
 	output: {
  		path      : __dirname + '/dist/',
@@ -66,6 +67,7 @@ var config = {
         //html模板的处理
        new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
        new HtmlWebpackPlugin(getHtmlConfig('login','登录页')),
+       new HtmlWebpackPlugin(getHtmlConfig('result','结果页')),
     ] 
 };
  if('dev' === WEBPACK_ENV){
