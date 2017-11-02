@@ -1,0 +1,85 @@
+/*
+* @Author: suwei
+* @Date:   2017-10-31 15:14:11
+* @Last Modified by:   suwei
+* @Last Modified time: 2017-10-31 17:43:50
+*/
+.user-register{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: rgba(255, 68, 0, 0.58);
+}
+.user-register .register-side{
+	text-align: center;
+}
+.user-register .register-box{
+    padding: 25px 25px 23px;
+    color: #6c6c6c;
+    background-color: rgba(255,255,255,.7);
+    position: relative;
+    margin: 40px auto;
+}
+.register-box .register-title {
+    height: 30px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #3c3c3c;
+    margin-top: 9px;
+    padding-bottom: 8px;
+    font-weight: 700;
+	text-align: center;
+	border-bottom: 1px solid #f40;
+}
+.register-box .input-group{
+	width: 100%;
+	margin:20px 0; 
+}
+.register-box #submit{
+    width: 100%;
+    height: 34px;
+    border: 0;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #f40;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    zoom: 1;
+}
+
+.register-box .link-item {
+    text-align: right;
+    margin-top: 20px;
+}
+.register-box .link-item .link{
+	margin-left: 10px;
+}
+.register-box .link-item .link.social{
+	float: left;
+}
+
+.register-box .register-msg {
+	line-height: 18px;
+    padding: 6px 10px;
+    overflow: hidden;
+    width: 100%;
+    background: #fef2f2;
+    border: 1px solid;
+	display: none;
+    border-color: #ffb4a8;
+    background-color: #fef2f2;
+    color: #6C6C6C;
+    margin-top: 20px;
+}
+.register-box .register-msg .error-icon{
+	color: red;
+}
+.register-box .register-msg .error-msg{
+	margin-left: 10px;
+}

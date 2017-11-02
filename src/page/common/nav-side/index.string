@@ -1,8 +1,8 @@
 {{#navList}}
 {{#isActive}}
-	<a class="active" href="{{href}}">{{desc}}</a>
+	<li role="presentation" class="active"><a href="{{href}}">{{desc}}</a></li>
 {{/isActive}}
 {{^isActive}}
-	<a  href="{{href}}">{{desc}}</a>
+	<li role="presentation" ><a href="{{href}}">{{desc}}</a></li>
 {{/isActive}}
 {{/navList}}

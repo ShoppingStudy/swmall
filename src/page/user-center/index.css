@@ -1,0 +1,60 @@
+/*
+* @Author: suwei
+* @Date:   2017-11-02 09:01:18
+* @Last Modified by:   suwei
+* @Last Modified time: 2017-11-02 14:15:04
+*/
+/* 面包屑导航 */
+.crumb .breadcrumb{
+	background: #f2dede;
+}
+.crumb .breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #f40;
+    content: "/\A0";
+}
+.crumb .breadcrumb a{
+	color: #777;
+}
+.crumb .breadcrumb a:hover{
+	color: #f40;
+	text-decoration: none;
+}
+
+/* 个人信息标签页 */
+.panel.user-center-panel{
+	border-color: #ff4200;
+}
+.panel.user-center-panel .panel-heading{
+	color: #fff;
+    background-color: #f40;
+    border-color: #f40;
+	text-align: center;
+}
+.panel.user-center-panel .edit{
+	color: #fff;
+    background-color: #f8bb86;
+    border-color: #f8bb86;
+}
+
+
+.modal-header .update-msg {
+	line-height: 18px;
+    padding: 6px 10px;
+    overflow: hidden;
+    width: 54%;
+    background: #fef2f2;
+    border: 1px solid;
+    border-color: #ffb4a8;
+    background-color: #fef2f2;
+    color: #6C6C6C;
+    float: right;
+    margin: 0 90px 0 0;
+    display: none;
+}
+.modal-header .update-msg .error-icon{
+	color: red;
+}
+.modal-header .update-msg .error-msg{
+	margin-left: 10px;
+}

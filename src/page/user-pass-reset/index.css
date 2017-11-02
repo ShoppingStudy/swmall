@@ -1,0 +1,144 @@
+/*
+* @Author: suwei
+* @Date:   2017-11-01 08:58:53
+* @Last Modified by:   suwei
+* @Last Modified time: 2017-11-01 15:47:17
+*/
+.user-pass-reset{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: rgba(255, 68, 0, 0.58);
+}
+.user-pass-reset .pass-reset-side{
+	text-align: center;
+}
+.user-pass-reset .pass-reset-box{
+    padding: 25px 25px 23px;
+    color: #6c6c6c;
+    background-color: rgba(255,255,255,.7);
+    position: relative;
+    margin: 30px auto;
+}
+.pass-reset-box .pass-reset-title {
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #3c3c3c;
+    margin-top: 9px;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+.pass-reset-box .input-group{
+	width: 100%;
+	margin:20px 0; 
+}
+.pass-reset-box .btn-nextStep{
+    width: 100%;
+    height: 34px;
+    border: 0;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #f40;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    zoom: 1;
+}
+
+.pass-reset-box .link-item {
+    text-align: right;
+    margin-top: 20px;
+}
+.pass-reset-box .link-item .link{
+	margin-left: 10px;
+}
+.pass-reset-box .link-item .link.social{
+	float: left;
+}
+
+.pass-reset-box .pass-reset-msg {
+	line-height: 18px;
+    padding: 6px 10px;
+    overflow: hidden;
+    width: 100%;
+    background: #fef2f2;
+    border: 1px solid;
+	display: none;
+    border-color: #ffb4a8;
+    background-color: #fef2f2;
+    color: #6C6C6C;
+}
+.pass-reset-box .pass-reset-msg .error-icon{
+	color: red;
+}
+.pass-reset-box .pass-reset-msg .error-msg{
+	margin-left: 10px;
+}
+
+.pass-reset-box .input-group{
+	display: none;
+}
+
+/* 进度导航 */
+.process{
+	padding: 40px 0;
+}
+
+.li{
+    display:inline-block;
+    position:relative;
+    margin-right:5px;
+    line-height:50px;
+    height:50px;
+    width:215px;
+    background:#EBEBEB;
+    text-align:center;
+}
+/*对li前面进行修改*/
+.li:before {
+    position:absolute;
+    left:0;
+    top:0;
+    height:0;
+    width:0;
+    border-bottom:25px inset transparent;
+    border-left:25px solid #ff926b;
+    border-top:25px inset transparent;
+    content:""
+}
+/*对li后面进行修改*/
+.li:after {
+    position:absolute;
+    right:-25px;
+    top:0;
+    height:0;
+    width:0;
+    border-bottom:25px inset transparent;
+    border-left:25px solid #EBEBEB;
+    border-top:25px inset transparent;
+    content:"";
+    z-index:2
+}
+/*选中状态*/
+.active{
+    color:#fff;
+    background:#FF6162;
+}
+.active:after {
+    border-left-color:#FF6162
+}
+
+/*第一个li*/
+.li:first-child:before{
+    border: 0
+}
+/*最后一个li*/
+.li:last-child:after{
+    border: 0
+}

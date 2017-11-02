@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%=require('html-loader!./layout/head-common.html') %>
+  <title><%= htmlWebpackPlugin.options.title %> - suwei的电商平台</title>
+</head>
+<body>
+  <%=  require('html-loader!./layout/nav-simple.html') %>
+  <div class="user-register">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-offset-4 col-lg-4">
+          <div class="form-group has-success has-feedback register-box">
+            <div class="register-title">用户注册</div>
+            <div class="register-msg">
+              <span class="glyphicon glyphicon-remove error-icon"></span>
+              <span class="error-msg"></span>
+            </div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+              <input type="text" name="username" class="form-control input-username"   placeholder="请输入用户名">
+            </div>
+            <div class="input-group password-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+              <input type="password" name="password" class="form-control input-password"   placeholder="请输入密码">
+            </div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+              <input type="password" name="password-confirm" class="form-control input-password-confirm"   placeholder="请输入确认密码">
+            </div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></span>
+              <input type="text" name="phone" class="form-control input-phone"   placeholder="请输入手机号">
+            </div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+              <input type="text" name="email" class="form-control input-email"   placeholder="请输入邮箱地址">
+            </div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-question-sign"></span></span>
+              <input type="text" name="question" class="form-control input-question"   placeholder="请输入密码提示问题">
+            </div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
+              <input type="text" name="answer" class="form-control input-answer"   placeholder="请输入密码提示问题答案">
+            </div>
+
+            <div class="input-group ">
+              <a class="btn-submit" id="submit">登录</a>
+            </div>
+
+            <div class="link-item">
+              <a class="link social" href="./user-login.html" target="_blank">QQ登录</a>
+              <a class="link" href="./user-login.html">已有账号，去登录 <span class="glyphicon glyphicon-arrow-right"></span></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%=  require('html-loader!./layout/footer.html') %>
+</body>
+</html>

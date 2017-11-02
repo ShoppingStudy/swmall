@@ -2,7 +2,7 @@
 * @Author: suwei
 * @Date:   2017-10-16 22:08:45
 * @Last Modified by:   suwei
-* @Last Modified time: 2017-10-31 08:25:13
+* @Last Modified time: 2017-11-02 14:38:24
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -25,10 +25,14 @@ var getHtmlConfig = function(name,title){
 };
 var config = {
 	entry: {
-        'common' : ['./src/page/common/index.js'],
-        'index' : ['./src/page/index/index.js'],
-        'login' : ['./src/page/login/index.js'],
-        'result' : ['./src/page/result/index.js'],
+        'common'          : ['./src/page/common/index.js'],
+        'index'           : ['./src/page/index/index.js'],
+        'user-login'      : ['./src/page/user-login/index.js'],
+        'user-register'   : ['./src/page/user-register/index.js'],
+        'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
+        'user-pass-update' : ['./src/page/user-pass-update/index.js'],
+        'user-center'     : ['./src/page/user-center/index.js'],
+        'result'          : ['./src/page/result/index.js'],
     },
 	output: {
  		path      : __dirname + '/dist/',
@@ -66,7 +70,11 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         //html模板的处理
        new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
-       new HtmlWebpackPlugin(getHtmlConfig('login','登录页')),
+       new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录页')),
+       new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册页')),
+       new HtmlWebpackPlugin(getHtmlConfig('user-center','用户个人中心页')),
+       new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码页')),
+       new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','重置密码页')),
        new HtmlWebpackPlugin(getHtmlConfig('result','结果页')),
     ] 
 };

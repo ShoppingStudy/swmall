@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%=require('html-loader!./layout/head-common.html') %>
+  <title><%= htmlWebpackPlugin.options.title %> - suwei的电商平台</title>
+</head>
+<body>
+  <%=  require('html-loader!./layout/nav-simple.html') %>
+  <div class="user-login">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-6 login-side">
+          <div class="wrapper">
+            <div class="border-circle" id="one"></div>
+            <div class="border-circle" id="two"></div>
+            <div class="background-circle">
+              <div class="triangle-light"></div>
+              <div class="body"></div>
+              <span class="shirt-text">S</span>
+              <span class="shirt-text">♥</span>
+              <span class="shirt-text">W</span>
+              <span class="shirt-text">E</span>
+              <span class="shirt-text">I</span>
+              <div class="triangle-dark"></div>
+            </div>
+            <div class="head">
+              <div class="ear" id="left"></div>
+              <div class="ear" id="right"></div>
+              <div class="hair-main">
+                <div class="sideburn" id="left"></div>
+                <div class="sideburn" id="right"></div>
+                <div class="hair-top"></div>
+              </div>
+              <div class="face">
+                <div class="hair-bottom"></div>
+                <div class="nose"></div>
+                <div class="eye-shadow" id="left">
+                  <div class="eyebrow"></div>
+                  <div class="eye"></div>
+                </div>
+                <div class="eye-shadow" id="right">
+                  <div class="eyebrow"></div>
+                  <div class="eye"></div>
+                </div>
+                <div class="mouth"></div>
+                <div class="shadow-wrapper">
+                  <div class="shadow"></div>
+                </div>
+              </div>
+            </div>
+            <span class="music-note" id="one">&#9835;</span>
+            <span class="music-note" id="two">&#9834;</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group has-success has-feedback login-box">
+            <div class="login-title">用户登录</div>
+            <div class="login-msg">
+              <span class="glyphicon glyphicon-remove error-icon"></span>
+              <span class="error-msg"></span>
+            </div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+              <input type="text" name="username" class="form-control input-username"   placeholder="请输入用户名">
+            </div>
+            <div class="input-group password-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+              <input type="password" name="password" class="form-control input-password"   placeholder="请输入密码">
+            </div>
+
+            <div class="input-group ">
+              <a class="btn-submit" id="submit">登录</a>
+            </div>
+
+            <div class="link-item">
+              <a class="link social" href="./user-pass-reset.html" target="_blank">QQ登录</a>
+              <a class="link" href="./user-pass-reset.html" >忘记密码</a>
+              <a class="link" href="./user-register.html">免费注册</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%=  require('html-loader!./layout/footer.html') %>
+</body>
+</html>

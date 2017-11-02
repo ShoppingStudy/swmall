@@ -2,12 +2,22 @@
 * @Author: Administrator
 * @Date:   2017-10-25 09:46:33
 * @Last Modified by:   suwei
-* @Last Modified time: 2017-10-30 13:38:27
+* @Last Modified time: 2017-11-01 09:48:19
 */
 /*全局样式*/
 .link{
    	color: #999;
     cursor: pointer;
     text-decoration: none;
+}
+.link:visited{
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+	color: #f40;
+	cursor: pointer;
+	text-decoration: none;
 }
 

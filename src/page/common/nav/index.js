@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-29 16:49:23
 * @Last Modified by:   suwei
-* @Last Modified time: 2017-10-30 11:38:55
+* @Last Modified time: 2017-11-02 14:21:46
 */
 
 //导航
@@ -26,12 +26,12 @@ var nav = {
 		});
 		//注册点击事件
 		$('.js-register').click(function(){
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		});
 		//退出点击事件
 		$('.js-logout').click(function(){
 			_user.logout(function(res){
-				window.location.reload();
+				_mm.doLogin();
 			}, function(errMsg){
 				_mm.errorTips(errMsg);
 			});

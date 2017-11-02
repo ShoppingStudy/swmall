@@ -1,0 +1,94 @@
+ <div class="panel panel-primary user-center-panel">
+  <div class="panel-heading ">个人中心</div>
+  <div class="panel-body">
+	  <form class="form-horizontal">
+	  <div class="form-group">
+	    <label class="col-lg-2 control-label">用户名：</label>
+	    <div class="col-lg-10">
+	      <p class="form-control-static p-username">{{username}}</p>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-lg-2 control-label">电话：</label>
+	    <div class="col-lg-10">
+	      <p class="form-control-static p-phone">{{phone}}</p>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-lg-2 control-label">邮箱：</label>
+	    <div class="col-lg-10">
+	      <p class="form-control-static p-email">{{email}}</p>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-lg-2 control-label">问题：</label>
+	    <div class="col-lg-10">
+	      <p class="form-control-static p-question">{{question}}</p>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-lg-2 control-label">答案：</label>
+	    <div class="col-lg-10">
+	      <p class="form-control-static p-answer">{{answer}}</p>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	  	<div class="col-lg-offset-2 col-lg-10">
+			<button type="button" class="btn btn-primary edit" data-toggle="modal" data-target="#userUpdate">编辑</button>
+	    </div>   
+	  </div>
+
+	</form>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="userUpdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="update-msg">
+	      <span class="glyphicon glyphicon-remove error-icon"></span>
+	      <span class="error-msg">1111</span>
+	    </div>
+        <h4 class="modal-title" id="myModalLabel">修改个人信息</h4>
+        
+      </div>
+      <div class="modal-body">
+      <div class="form-group has-success has-feedback">
+		  <label class="control-label" for="inputPhone">电话：</label>
+		  <input type="text" class="form-control" id="inputPhone" value="{{phone}}">
+		  <span class="glyphicon glyphicon-phone form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputPhone" class="sr-only">(电话：)</span>
+		</div>
+		<div class="form-group has-warning has-feedback">
+		  <label class="control-label" for="inputEmail">邮箱：</label>
+		  <input type="email" class="form-control" id="inputEmail" value="{{email}}">
+		  <span class="glyphicon glyphicon-envelope form-control-feedback" ></span>
+		  <span id="inputEmail" class="sr-only">(邮箱：)</span>
+		</div>
+		<div class="form-group has-error has-feedback">
+		  <label class="control-label" for="inputQuestion" >密码提示问题：</label>
+		  <input type="text" class="form-control" id="inputQuestion" value="{{question}}">
+		  <span class="glyphicon glyphicon-question-sign form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputQuestion" class="sr-only">(密码提示问题：)</span>
+		</div>
+		<div class="form-group has-success has-feedback">
+		  <label class="control-label" for="inputAnswer">密码提示问题答案：</label>
+		  <input type="text" class="form-control" id="inputAnswer" value="{{answer}}">
+		  <span class="glyphicon glyphicon-tag form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputAnswer" class="sr-only">(密码提示问题答案：)</span>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary" id="saveUpdate">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

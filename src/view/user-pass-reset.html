@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%=require('html-loader!./layout/head-common.html') %>
+  <title><%= htmlWebpackPlugin.options.title %> - suwei的电商平台</title>
+</head>
+<body>
+  <%=  require('html-loader!./layout/nav-simple.html') %>
+  <div class="user-pass-reset">
+    <div class="container">
+      <div class="row process">
+         <ul>
+            <li class="li start" style="z-index: 5;">找回密码</li>
+            <li class="li step1" style="z-index: 4;">请输入用户名</li>
+            <li class="li step2" style="z-index: 3;">请输入密码提示问题答案</li>
+            <li class="li step3" style="z-index: 2;">请输入新密码</li>
+            <li class="li step4" style="z-index: 1;">完成</li>
+        </ul>
+
+      </div>
+      <div class="row ">
+        <div class="col-lg-4 pass-reset-side"></div>
+        <div class="col-lg-4">
+          <div class="form-group has-success has-feedback pass-reset-box">
+            <div class="pass-reset-title">找回密码</div>
+            <div class="input-group username-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+              <input type="text" name="username"  class="form-control input-username"   placeholder="请输入用户名" >
+            </div>
+            <div class="input-group question-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+              <input type="text" name="question" class="form-control input-question"   placeholder="请输入密码提示问题答案">
+            </div>
+            <div class="input-group passwordNew-field">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+              <input type="text" name="passwordNew" class="form-control input-passwordNew"   placeholder="请输入新密码">
+            </div>
+            <div class="input-group usernameStep-field">
+              <a class="btn-nextStep" id="nextStep-username">下一步</a>
+            </div>
+            <div class="input-group questionStep-field">
+              <a class="btn-nextStep" id="nextStep-question">下一步</a>
+            </div>
+            <div class="input-group passwordNewStep-field">
+              <a class="btn-nextStep" id="nextStep-passwordNew">下一步</a>
+            </div>
+
+            <div class="link-item">
+              <a class="link" href="./user-login.html">返回登录<span class="glyphicon glyphicon-arrow-right"></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%=  require('html-loader!./layout/footer.html') %>
+</body>
+</html>

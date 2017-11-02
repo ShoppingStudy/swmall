@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%=require('html-loader!./layout/head-common.html') %>
+  <title><%= htmlWebpackPlugin.options.title %> - suwei的电商平台</title>
+</head>
+<body>
+	<%=  require('html-loader!./layout/nav.html') %>
+	<%=  require('html-loader!./layout/header.html') %>
+	<div class="container">
+		<div class="row crumb">
+			<div class="col-lg-12">
+				<ol class="breadcrumb">
+				  <li><a href="./index.html">SWMall</a></li>
+				  <li class="active"><a href="#">个人中心</a></li>
+				</ol>
+			</div>		
+		</div>
+		<div class="row">
+			<div class="col-lg-2">
+				<%=  require('html-loader!./layout/nav-side.html') %>
+			</div>
+			<div class="col-lg-10 userCenter-content">
+				<%=  require('html-loader!./layout/loading.html') %>
+			</div>
+		</div>
+		
+	</div>
+  
+	<%=  require('html-loader!./layout/footer.html') %>
+</body>
+</html>
