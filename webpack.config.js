@@ -2,7 +2,7 @@
 * @Author: suwei
 * @Date:   2017-10-16 22:08:45
 * @Last Modified by:   suwei
-* @Last Modified time: 2017-11-02 14:38:24
+* @Last Modified time: 2017-11-06 15:47:31
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -30,8 +30,10 @@ var config = {
         'user-login'      : ['./src/page/user-login/index.js'],
         'user-register'   : ['./src/page/user-register/index.js'],
         'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
-        'user-pass-update' : ['./src/page/user-pass-update/index.js'],
+        'user-pass-update': ['./src/page/user-pass-update/index.js'],
         'user-center'     : ['./src/page/user-center/index.js'],
+        'miaosha'         : ['./src/page/miaosha/index.js'],
+        'miaosha-detail'  : ['./src/page/miaosha-detail/index.js'],
         'result'          : ['./src/page/result/index.js'],
     },
 	output: {
@@ -75,6 +77,8 @@ var config = {
        new HtmlWebpackPlugin(getHtmlConfig('user-center','用户个人中心页')),
        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码页')),
        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','重置密码页')),
+       new HtmlWebpackPlugin(getHtmlConfig('miaosha','秒杀页')),
+       new HtmlWebpackPlugin(getHtmlConfig('miaosha-detail','秒杀详情页')),
        new HtmlWebpackPlugin(getHtmlConfig('result','结果页')),
     ] 
 };

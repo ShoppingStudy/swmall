@@ -1,0 +1,8 @@
+<div class="thumbnail">
+  <a href="./miaosha-detail.html?seckillId={{seckillId}}"><img class="img" src="<%=  require('../image/iPhonered.jpg') %>" alt=""></a>
+  <div class="caption">
+    <h3>{{name}}</h3>
+    <p>库存{{number}}</p>
+    <p><a  class="btn btn-primary" role="button" id="excute">立即秒杀</a> </p>
+  </div>
+</div>
